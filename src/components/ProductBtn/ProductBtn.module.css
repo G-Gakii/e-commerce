@@ -1,0 +1,9 @@
+.ProductBtn {
+  /* background-color: var(--rectanglebackground); */
+  background-color: transparent;
+  color: var(--white);
+  border: none;
+  padding: 1.5rem 3.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}

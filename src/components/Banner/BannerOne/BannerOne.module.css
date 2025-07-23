@@ -1,0 +1,64 @@
+.banner {
+  background-color: var(--text-color);
+  color: var(--white);
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  width: 78%;
+}
+.bannerOne__container {
+  display: flex;
+  justify-content: space-between;
+}
+.bannerOne__container__img {
+  width: 100%;
+  object-fit: cover;
+}
+.bannerOne__container__productname {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.bannerOne__container__about {
+  font-size: 3rem;
+  line-height: 3.8rem;
+  font-weight: 600;
+}
+.bannerOne__container__span {
+  text-decoration: underline;
+  margin-right: 0.3rem;
+}
+.bannerOne__container__shoplink {
+  margin-top: 2rem;
+  font-weight: 500;
+}
+.bannerOne__dots__container {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+.bannerOne__dots {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: gray;
+}
+.bannerOne__dots:nth-child(3) {
+  background-color: brown;
+  border: 1px solid white;
+}
+@media screen and (max-width: 768px) {
+  .banner {
+    width: 100%;
+  }
+  .bannerOne__container {
+    flex-direction: column;
+  }
+  .bannerOne__container__section2 {
+    order: 1;
+  }
+  .bannerOne__container__section1 {
+    order: 2;
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../variables.css";
+
+.discountBtn__btn {
+  background-color: var(--rectanglebackground);
+  color: var(--white);
+  font-size: 1.125rem;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+}

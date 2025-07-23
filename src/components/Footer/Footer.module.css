@@ -1,0 +1,52 @@
+@import "../../variables.css";
+
+.footer__container {
+  padding: 3rem 2rem;
+  background-color: var(--text-color);
+  color: var(--white);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.footer__container section p {
+  margin: 1.5rem 0;
+}
+.footer__container_fPara {
+  font-size: 1.25rem;
+}
+.footer__container__email {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid var(--white);
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  width: fit-content;
+}
+.footer__container section div input {
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+}
+.footer__images {
+  display: flex;
+  gap: 0.5rem;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  border: none;
+}
+.socials {
+  display: flex;
+
+  gap: 2rem;
+  margin: 1rem 0;
+}
+.copyright {
+  background-color: var(--text-color);
+  color: whitesmoke;
+  padding: 1rem;
+  text-align: center;
+}

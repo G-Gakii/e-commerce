@@ -1,0 +1,16 @@
+.HowItWork__container {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.HowItWork__container section {
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .HowItWork__container {
+    flex-direction: column;
+  }
+}

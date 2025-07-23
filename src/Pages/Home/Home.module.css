@@ -1,0 +1,13 @@
+.hero {
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+}
+.hero__hr {
+  width: 1px;
+}
+@media screen and (max-width: 768px) {
+  .hero__hr {
+    display: none;
+  }
+}

@@ -1,0 +1,9 @@
+.ourproducts__container {
+  padding: 1rem;
+}
+.ourproducts__container__title {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

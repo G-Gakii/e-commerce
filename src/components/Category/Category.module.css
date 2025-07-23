@@ -1,0 +1,27 @@
+@import "../../variables.css";
+.category__container {
+  padding: 1rem 2rem;
+}
+.category__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.category__types {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.category__types section {
+  border: 1px solid black;
+  padding: 2rem;
+  min-width: 170px;
+  text-align: center;
+  border-radius: 0.7rem;
+}
+.category__types section:nth-child(4) {
+  background-color: var(--rectanglebackground);
+  border: none;
+}

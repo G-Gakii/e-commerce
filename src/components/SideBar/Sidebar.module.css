@@ -1,0 +1,17 @@
+.sidebar__container {
+  padding: 1rem 0 1rem 2rem;
+  list-style-type: none;
+  width: 20%;
+  max-width: 200px;
+}
+.sidebar__container li {
+  display: flex;
+  padding: 0.5rem 0;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .sidebar__container {
+    display: none;
+  }
+}
