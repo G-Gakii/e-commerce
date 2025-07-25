@@ -4,15 +4,29 @@ import { NavLink } from "react-router-dom";
 import search from "../../assets/Vector.png";
 import wishlist from "../../assets/Vector-2.png";
 import cart from "../../assets/Cart1.png";
+import currentUser from "../../assets/user-2.png";
+import { getAuth } from "firebase/auth";
+import AccountDropdown from "../AccountDropdown/AccountDropdown";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
+  const [showDropDown, setShowDropDown] = useState(false);
+  const user = getAuth().currentUser;
+  console.log(user);
 
   const showLinkFunction = () => {
     console.log(showLinks);
 
     setShowLinks((prev) => !prev);
   };
+  const ShowDropdownfn = () => {
+    setShowDropDown((prev) => !prev);
+  };
+  const wishItemCount = useSelector(
+    (state) => state.wishlist?.item?.length || 0
+  );
+  console.log(wishItemCount);
 
   return (
     <>
@@ -88,9 +102,24 @@ const Navbar = () => {
             <img src={search} alt="search icon" width={12} height={12} />{" "}
           </span>
 
-          <img src={wishlist} alt="wishlist icon" />
+          <div className={styles.navbar__container__wishlist}>
+            <img src={wishlist} alt="wishlist icon" />
+            <small className={styles.navbar__container__wishlist__span}>
+              {wishItemCount}
+            </small>
+          </div>
           <img src={cart} alt="cart icon" />
+
+          <img
+            onClick={ShowDropdownfn}
+            className={`${user ? styles.displayUser : styles.hideUser} ${
+              showDropDown ? styles.showDropDownMenu : ""
+            }`}
+            src={currentUser}
+            alt="user icon"
+          />
         </section>
+        <AccountDropdown show={showDropDown} />
       </div>
       <hr />
     </>

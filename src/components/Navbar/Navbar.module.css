@@ -47,8 +47,42 @@ hr {
 .navbar__links__menu {
   display: none;
 }
+.displayUser {
+  display: block;
+}
+.hideUser {
+  display: none;
+}
+.showDropDownMenu {
+  background-color: #24bbbb;
+
+  border-radius: 50%;
+  padding: 0.2rem;
+
+  filter: invert(1);
+}
+.navbar__container__wishlist {
+  position: relative;
+}
+.navbar__container__wishlist__span {
+  position: absolute;
+  background-color: transparent;
+  background-color: var(--rectanglebackground);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  top: -0.5rem;
+  right: -0.4rem;
+  border-radius: 50%;
+}
 @media screen and (max-width: 768px) {
-  .navbar__search span p {
+  .navbar__container {
+    padding: 1rem 0.5rem;
+  }
+  .navbar__search span {
     display: none;
   }
   .navbar__links__menu {

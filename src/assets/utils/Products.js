@@ -165,3 +165,41 @@ export const products = [
     image: jacket,
   },
 ];
+
+export const recommended = [
+  {
+    name: "ASUS FHD Gaming Laptop",
+    price: "$700",
+    original_price: "",
+    rating: 5,
+    total_rating: 325,
+    image: laptop,
+  },
+  {
+    name: "IPS LCD Gaming Monitor",
+    price: "$370",
+    original_price: "$400",
+    rating: 5,
+    total_rating: 99,
+    image: monitor,
+    discount: 30,
+  },
+  {
+    name: "HAVIT HV-G92 Gamepad",
+    price: "$120",
+    original_price: "$160",
+    rating: 5,
+    total_rating: 88,
+    image: gamepad,
+    discount: 40,
+  },
+  {
+    name: "AK-900 Wired Keyboard",
+    price: "$960",
+    original_price: "$1160",
+    rating: 4,
+    total_rating: 75,
+    image: keyboard,
+    discount: 35,
+  },
+];

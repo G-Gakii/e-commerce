@@ -4,8 +4,7 @@ import styles from "./FlashSale.module.css";
 import DiscountBtn from "../DiscountBtn/DiscountBtn";
 import { flashSaleItems } from "../../assets/utils/Products";
 import ProductBtn from "../ProductBtn/ProductBtn";
-import love from "../../assets/Vector-2.png";
-import eye from "../../assets/Vector-3.png";
+
 import Title from "../Title/Title";
 import Products from "../Products/Products";
 
@@ -39,40 +38,6 @@ const FlashSale = () => {
         <section></section>
       </div>
 
-      {/* <div className={styles.flashsale__container__items}>
-        {flashSaleItems.map((item, index) => (
-          <div key={index} className={styles.flashsale__container__items__item}>
-            <DiscountBtn percentage={item.discount} />
-
-            <div className={styles.flashsale__container__items__item__img}>
-              <img src={item.image} alt="" />
-            </div>
-
-            <div>
-              <h4 className={styles.flashsale__container__items__item__title}>
-                {item.name}
-              </h4>
-              <p>
-                <span
-                  className={styles.flashsale__container__items__item__price}
-                >
-                  {item.price}
-                </span>{" "}
-                <span
-                  className={
-                    styles.flashsale__container__items__item__originalprice
-                  }
-                >
-                  {item.original_price}
-                </span>
-              </p>
-              <p>
-                <span>{item.rating}</span> <span> ({item.total_rating})</span>{" "}
-              </p>
-            </div>
-          </div>
-        ))}
-      </div> */}
       <Products Products={flashSaleItems} />
       <div className={styles.button}>
         <ProductBtn btnFunc={"View All Products"} />

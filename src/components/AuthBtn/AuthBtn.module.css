@@ -1,0 +1,13 @@
+.register__container__btn__create {
+  padding: 0.8rem;
+  border: none;
+  background-color: var(--rectanglebackground);
+  color: var(--white);
+  border-radius: 0.3rem;
+  width: 100%;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
