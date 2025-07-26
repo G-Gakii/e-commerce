@@ -1,8 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { getAuth } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 const initialState = {
   item: [],
 };
+
 export const wishlistSlice = createSlice({
   name: "wishlist",
   initialState,

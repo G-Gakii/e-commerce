@@ -52,6 +52,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  position: relative;
 
   img {
     max-width: 100%;
@@ -92,6 +94,12 @@
     padding: 0.7rem;
     border-radius: 50%;
   }
+}
+.hide__eye {
+  display: none;
+}
+.show__eye {
+  display: block;
 }
 
 @media screen and (max-width: 768px) {

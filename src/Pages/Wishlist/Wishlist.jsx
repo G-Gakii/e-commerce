@@ -27,6 +27,7 @@ const Wishlist = () => {
       <section>
         <Subtitle title={"Just For You"} />
       </section>
+
       <Products Products={recommended} />
       <Footer />
     </div>

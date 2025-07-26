@@ -1,0 +1,22 @@
+@import "../../variables.css";
+.cart_btn {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.3rem;
+  background-color: var(--text-color);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  img {
+    filter: invert(1);
+  }
+}
+.display__cartbtn {
+  display: flex;
+}
+.hide___cartbtn {
+  display: none;
+}

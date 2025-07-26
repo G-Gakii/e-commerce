@@ -1,0 +1,7 @@
+.whiteBtn {
+  background-color: transparent;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.2rem;
+  border: 1px solid gray;
+  max-height: 2.5rem;
+}

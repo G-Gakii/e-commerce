@@ -1,0 +1,16 @@
+@import "../../variables.css";
+
+.card__container {
+  border: 1px solid black;
+  padding: 1rem;
+}
+.card__container__button {
+  background-color: var(--rectanglebackground);
+  width: fit-content;
+}
+.card__total__cost {
+  border-bottom: 1px solid gray;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}

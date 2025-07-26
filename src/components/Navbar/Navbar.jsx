@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import search from "../../assets/Vector.png";
 import wishlist from "../../assets/Vector-2.png";
 import cart from "../../assets/Cart1.png";
@@ -13,7 +13,7 @@ const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
   const [showDropDown, setShowDropDown] = useState(false);
   const user = getAuth().currentUser;
-  console.log(user);
+  const navigate = useNavigate();
 
   const showLinkFunction = () => {
     console.log(showLinks);
@@ -26,7 +26,9 @@ const Navbar = () => {
   const wishItemCount = useSelector(
     (state) => state.wishlist?.item?.length || 0
   );
-  console.log(wishItemCount);
+  const cartItemCount = useSelector(
+    (state) => state.cart?.cartItem?.length || 0
+  );
 
   return (
     <>
@@ -102,13 +104,28 @@ const Navbar = () => {
             <img src={search} alt="search icon" width={12} height={12} />{" "}
           </span>
 
-          <div className={styles.navbar__container__wishlist}>
+          <div
+            className={styles.navbar__container__wishlist}
+            onClick={() => {
+              navigate("/wishlist");
+            }}
+          >
             <img src={wishlist} alt="wishlist icon" />
             <small className={styles.navbar__container__wishlist__span}>
               {wishItemCount}
             </small>
           </div>
-          <img src={cart} alt="cart icon" />
+          <div
+            className={styles.navbar__container__wishlist}
+            onClick={() => {
+              navigate("/cart");
+            }}
+          >
+            <img src={cart} alt="cart icon" />
+            <small className={styles.navbar__container__wishlist__span}>
+              {cartItemCount}
+            </small>
+          </div>
 
           <img
             onClick={ShowDropdownfn}

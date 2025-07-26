@@ -1,0 +1,41 @@
+.cart__content__container {
+  padding: 2rem 1rem;
+}
+.table {
+  width: 100%;
+  max-width: 1200px;
+  overflow-x: auto;
+}
+.table__header th,
+td {
+  padding: 0.8rem;
+  text-align: start;
+}
+.table__data td:first-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.table__data td:nth-child(3) input {
+  padding: 0.5rem;
+  max-width: 4rem;
+}
+.cart__buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.cart__coupon {
+  display: flex;
+  gap: 1rem;
+}
+.cart__coupon__btn {
+  background-color: var(--rectanglebackground);
+  width: fit-content;
+  border-radius: 0.2rem;
+  height: fit-content;
+}
+.cart__payment {
+  display: flex;
+  justify-content: space-between;
+}

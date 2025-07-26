@@ -1,0 +1,5 @@
+.cart__container__page__name {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

@@ -1,0 +1,31 @@
+.about__story {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.about__story__content {
+  max-width: 50%;
+}
+.about__story__content h2 {
+  font-family: var(--inter);
+  font-weight: 600;
+  font-size: 2.25rem;
+  padding: 2rem 0;
+}
+.about__story__content p {
+  padding: 1rem 0;
+}
+.about__story__img {
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__story {
+    flex-direction: column;
+  }
+  .about__story__content {
+    width: 50%;
+  }
+}
